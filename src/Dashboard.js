@@ -98,6 +98,7 @@ export default class Dashboard extends Component {
                 userData : this.state.userData.filter( user => {
                     if(user.id !== id ){
                         deletedData = user;
+                        console.log('deleted data', deletedData);
                     }
                     return (user.id !== id);
                 })
